@@ -1,8 +1,8 @@
 Bootstrap_Flask>=2.3.2
 requests>=2.31.0
 flask>=2.2.5
-python-dotenv>=1.0.0
-wtforms>=3.1.1
+python-dotenv>=0.21.1
+wtforms>=3.0.1
 gunicorn>=21.2.0
-Flask-WTF>=1.2.1
+Flask-WTF>=1.1.1
 Flask-Mail>=0.9.1
