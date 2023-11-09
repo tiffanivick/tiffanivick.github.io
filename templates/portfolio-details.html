@@ -14,11 +14,6 @@
       type="image/x-icon"
       href="{{ url_for('static', filename='/assets/img/letter-t.svg') }}"
     />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="{{ url_for('static', filename='/assets/img/letter-t.svg') }}"
-    />
 
     <!-- Google Fonts -->
     <link
@@ -27,30 +22,19 @@
     />
 
     <!-- Vendor CSS Files -->
-    <link href="/static/assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="/static/assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="/static/assets/vendor/boxicons/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="/static/assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
     <link
       href="{{ url_for('static', filename='/assets/css/style.css') }}"
       rel="stylesheet"
     />
+
   </head>
 
   <body>
@@ -109,15 +93,15 @@
     ></a>
 
     <!-- Vendor JS Files -->
-    <script src="/static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="/static/assets/vendor/aos/aos.js"></script>
-    <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="/static/assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="/static/assets/vendor/waypoints/noframework.waypoints.js"></script>
-<!--    <script src="/static/assets/vendor/email-form/validate.js"></script>-->
+    <script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/typed.js/typed.umd.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+    <!-- <script src="{{ url_for('static', filename='assets/vendor/email-form/validate.js') }}"></script> -->
 
     <!-- Template Main JS File -->
     <script src="{{ url_for('static', filename='/assets/js/main.js') }}"></script>

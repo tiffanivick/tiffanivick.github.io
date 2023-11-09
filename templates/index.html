@@ -10,21 +10,21 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="static/assets/css/style.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
 
 </head>
 
@@ -77,7 +77,8 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="static/assets/img/profile-img.png" class="img-fluid" alt="">
+            <img src="{{ url_for('static', filename='assets/img/profile-img.png') }}" class="img-fluid" alt="Me">
+
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Data Analyst.</h3>
@@ -390,12 +391,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="static/assets/img/projects/previews/project-1.jpg" class="img-fluid" alt="movie film">
+              <img src="{{ url_for('static', filename='assets/img/projects/previews/project-1.jpg') }}" class="img-fluid" alt="movie film">
               <div class="portfolio-info">
                 <h4>Movie Scraper</h4>
                 <p>Machine Learning</p>
                 <div class="portfolio-links">
-                  <a href="static/assets/img/projects/previews/project-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Movie Scraper"><i class="bx bx-plus"></i></a>
+                  <a href="{{ url_for('static', filename='assets/img/projects/previews/project-1.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Movie Scraper"><i class="bx bx-plus"></i></a>
                   <a href="{{ url_for('get_projects', index=1) }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -404,12 +405,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="static/assets/img/projects/previews/project-2.jpg" class="img-fluid" alt="database">
+              <img src="{{ url_for('static', filename='assets/img/projects/previews/project-2.jpg') }}" class="img-fluid" alt="database">
               <div class="portfolio-info">
                 <h4>Superhero Data Pipeline</h4>
                 <p>Machine Learning</p>
                 <div class="portfolio-links">
-                  <a href="static/assets/img/projects/previews/project-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Superhero Data Pipeline"><i class="bx bx-plus"></i></a>
+                  <a href="{{ url_for('static', filename='assets/img/projects/previews/project-2.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Superhero Data Pipeline"><i class="bx bx-plus"></i></a>
                   <a href="{{ url_for('get_projects', index=2) }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -418,12 +419,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-webdev">
             <div class="portfolio-wrap">
-              <img src="static/assets/img/projects/previews/project-3.jpg" class="img-fluid" alt="puzzle pieces">
+              <img src="{{ url_for('static', filename='assets/img/projects/previews/project-3.jpg') }}" class="img-fluid" alt="puzzle pieces">
               <div class="portfolio-info">
                 <h4>Snake Game</h4>
                 <p>Web Development</p>
                 <div class="portfolio-links">
-                  <a href="static/assets/img/projects/previews/project-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Snake Game"><i class="bx bx-plus"></i></a>
+                  <a href="{{ url_for('static', filename='assets/img/projects/previews/project-3.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Snake Game"><i class="bx bx-plus"></i></a>
                   <a href="{{ url_for('get_projects', index=3) }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -432,12 +433,12 @@
 
 <!--          <div class="col-lg-4 col-md-6 portfolio-item filter-dataviz">-->
 <!--            <div class="portfolio-wrap">-->
-<!--              <img src="static/assets/img/projects/previews/project-4.jpg" class="img-fluid" alt="building">-->
+<!--              <img src="{{ url_for('static', filename='assets/img/projects/previews/project-4.jpg') }}" class="img-fluid" alt="building">-->
 <!--              <div class="portfolio-info">-->
 <!--                <h4>Company Employees by Gender</h4>-->
 <!--                <p>Data Visualization</p>-->
 <!--                <div class="portfolio-links">-->
-<!--                  <a href="static/assets/img/projects/previews/project-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Company Employees by Gender"><i class="bx bx-plus"></i></a>-->
+<!--                  <a href="{{ url_for('static', filename='assets/img/projects/previews/project-4.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Company Employees by Gender"><i class="bx bx-plus"></i></a>-->
 <!--                  <a href="{{ url_for('get_projects', index=4) }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
 <!--                </div>-->
 <!--              </div>-->
@@ -446,12 +447,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-webdev">
             <div class="portfolio-wrap">
-              <img src="static/assets/img/projects/previews/project-5.jpg" class="img-fluid" alt="apple tracker">
+              <img src="{{ url_for('static', filename='assets/img/projects/previews/project-5.jpg') }}" class="img-fluid" alt="apple tracker">
               <div class="portfolio-info">
                 <h4>Habit Tracker</h4>
                 <p>Web Development</p>
                 <div class="portfolio-links">
-                  <a href="static/assets/img/projects/previews/project-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Habit Tracker"><i class="bx bx-plus"></i></a>
+                  <a href="{{ url_for('static', filename='assets/img/projects/previews/project-5.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Habit Tracker"><i class="bx bx-plus"></i></a>
                   <a href="{{ url_for('get_projects', index=5) }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -460,12 +461,12 @@
 
 <!--          <div class="col-lg-4 col-md-6 portfolio-item filter-dataviz">-->
 <!--            <div class="portfolio-wrap">-->
-<!--              <img src="static/assets/img/projects/previews/project-6.jpg" class="img-fluid" alt="piggy bank">-->
+<!--              <img src="{{ url_for('static', filename='assets/img/projects/previews/project-6.jpg') }}" class="img-fluid" alt="piggy bank">-->
 <!--              <div class="portfolio-info">-->
 <!--                <h4>Excel Profit and Loss Statement</h4>-->
 <!--                <p>Data Visualization</p>-->
 <!--                <div class="portfolio-links">-->
-<!--                  <a href="static/assets/img/projects/previews/project-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Excel Profit and Loss Statement"><i class="bx bx-plus"></i></a>-->
+<!--                  <a href="{{ url_for('static', filename='assets/img/projects/previews/project-6.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Excel Profit and Loss Statement"><i class="bx bx-plus"></i></a>-->
 <!--                  <a href="{{ url_for('get_projects', index=6) }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
 <!--                </div>-->
 <!--              </div>-->
@@ -474,12 +475,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-webdev">
             <div class="portfolio-wrap">
-              <img src="static/assets/img/projects/previews/project-7.jpg" class="img-fluid" alt="tape measure">
+              <img src="{{ url_for('static', filename='assets/img/projects/previews/project-7.jpg') }}" class="img-fluid" alt="tape measure">
               <div class="portfolio-info">
                 <h4>Miles to Kilometers</h4>
                 <p>Web Development</p>
                 <div class="portfolio-links">
-                  <a href="static/assets/img/projects/previews/project-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Miles to Kilometers"><i class="bx bx-plus"></i></a>
+                  <a href="{{ url_for('static', filename='assets/img/projects/previews/project-7.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Miles to Kilometers"><i class="bx bx-plus"></i></a>
                   <a href="{{ url_for('get_projects', index=7) }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -488,12 +489,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="static/assets/img/projects/previews/project-8.jpg" class="img-fluid" alt="airplane wing">
+              <img src="{{ url_for('static', filename='assets/img/projects/previews/project-8.jpg') }}" class="img-fluid" alt="airplane wing">
               <div class="portfolio-info">
                 <h4>Flight Price Prediction</h4>
                 <p>Machine Learning</p>
                 <div class="portfolio-links">
-                  <a href="static/assets/img/projects/previews/project-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Flight Price Prediction"><i class="bx bx-plus"></i></a>
+                  <a href="{{ url_for('static', filename='assets/img/projects/previews/project-8.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Flight Price Prediction"><i class="bx bx-plus"></i></a>
                   <a href="{{ url_for('get_projects', index=8) }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -502,12 +503,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-webdev">
             <div class="portfolio-wrap">
-              <img src="static/assets/img/projects/previews/project-9.jpg" class="img-fluid" alt="coffee beans">
+              <img src="{{ url_for('static', filename='assets/img/projects/previews/project-9.jpg') }}" class="img-fluid" alt="coffee beans">
               <div class="portfolio-info">
                 <h4>Coffee and Wifi</h4>
                 <p>Web Development</p>
                 <div class="portfolio-links">
-                  <a href="static/assets/img/projects/previews/project-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Coffee and Wifi"><i class="bx bx-plus"></i></a>
+                  <a href="{{ url_for('static', filename='assets/img/projects/previews/project-9.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Coffee and Wifi"><i class="bx bx-plus"></i></a>
                   <a href="{{ url_for('get_projects', index=9) }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -717,18 +718,18 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="static/assets/vendor/aos/aos.js"></script>
-  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="static/assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="static/assets/vendor/waypoints/noframework.waypoints.js"></script>
-<!--  <script src="static/assets/vendor/email-form/validate.js"></script>-->
+  <script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/typed.js/typed.umd.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <!-- <script src="{{ url_for('static', filename='assets/vendor/email-form/validate.js') }}"></script> -->
 
   <!-- Template Main JS File -->
-  <script src="static/assets/js/main.js"></script>
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
 
 </body>
 
