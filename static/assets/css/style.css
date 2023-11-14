@@ -1168,8 +1168,11 @@ section {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 50%;
+    width: 90%; /* Adjust the width */
+    max-width: 500px; /* set maximum width */
     padding: 20px;
+    margin-left: auto; /* set margin-left to auto */
+    margin-right: auto; /* set margin-right to auto */
 }
 
 .thanks h1 {
@@ -1194,6 +1197,13 @@ section {
 
 .thanks a:hover {
     text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width 768px) {
+    .thanks .thank-you-container {
+        width: 80%;
+    }
 }
 
 /*--------------------------------------------------------------
